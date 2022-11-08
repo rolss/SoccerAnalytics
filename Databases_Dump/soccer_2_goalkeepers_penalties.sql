@@ -1,0 +1,58 @@
+-- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
+--
+-- Host: localhost    Database: soccer_2
+-- ------------------------------------------------------
+-- Server version	8.0.28
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `goalkeepers_penalties`
+--
+
+DROP TABLE IF EXISTS `goalkeepers_penalties`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `goalkeepers_penalties` (
+  `Goalkeeper` text,
+  `Current team` text,
+  `Born` int DEFAULT NULL,
+  `Country` text,
+  `NotConceded` int DEFAULT NULL,
+  `Conceded` int DEFAULT NULL,
+  `PKsFaced` int DEFAULT NULL,
+  `Saves` text,
+  `id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `goalkeepers_penalties`
+--
+
+LOCK TABLES `goalkeepers_penalties` WRITE;
+/*!40000 ALTER TABLE `goalkeepers_penalties` DISABLE KEYS */;
+INSERT INTO `goalkeepers_penalties` VALUES ('Karlo Letica','Club Brugge',1997,'CRO',3,2,5,'60.00%',1),('Yuri Lodygin','Zenit',1990,'RUS',7,6,13,'53.85%',2),('Diego Alves','Valencia',1985,'BRA',25,31,56,'44.64%',3),('Aleksandr Belenov','FK Ufa',1986,'RUS',23,30,53,'43.40%',4),('Kenneth Vermeer','Feyenoord',1986,'NED',13,17,30,'43.33%',5),('Andrii Lunin','Leganes',1999,'UKR',2,3,5,'40.00%',6),('Jan Oblak','Atletico Madrid',1993,'SVN',13,22,35,'37.14%',7),('Samir Handanovic','Internazionale Milan',1984,'SVN',37,63,100,'37.00%',8),('Fraser Forster','Southampton',1988,'ENG',11,19,30,'36.67%',9),('Danijel Subašic','AS Monaco',1984,'CRO',18,34,52,'34.62%',10),('Matz Sels','Strasbourg',1992,'BEL',10,20,30,'33.33%',11),('Joel Robles','Betis',1990,'ESP',4,8,12,'33.33%',12),('Alisson','Liverpool',1992,'BRA',5,10,15,'33.33%',13),('Robin Olsen','Roma',1990,'SWE',6,12,18,'33.33%',14),('Mike Maignan','Lille',1995,'FRA',5,10,15,'33.33%',15),('Keylor Navas','Real Madrid CF',1986,'CRC',14,29,43,'32.56%',16),('Kevin Trapp','Eintracht Frankfurt',1990,'GER',13,27,40,'32.50%',17),('Emiliano Viviano','Sporting CP',1985,'ITA',19,40,59,'32.20%',18),('Manuel Neuer','Bayern Munchen',1986,'GER',18,38,56,'32.14%',19),('Andrea Consigli','Sassuolo',1987,'ITA',18,39,57,'31.58%',20),('Mathew Ryan','Brighton',1992,'AUS',11,24,35,'31.43%',21),('Federico Marchetti','Genoa',1983,'ITA',15,33,48,'31.25%',22),('Fernando Pacheco','Alaves',1992,'ESP',8,18,26,'30.77%',23),('Julio Cesar','Free Agent',1979,'BRA',15,34,49,'30.61%',24),('Gianluigi Donnarumma','AC Milan',1999,'ITA',7,16,23,'30.43%',25),('Loris Karius','Besiktas',1993,'GER',10,23,33,'30.30%',26),('Tom Heaton','Burnley',1986,'ENG',10,23,33,'30.30%',27),('Lukas Hradecky','Bayer Leverkusen',1989,'FIN',9,21,30,'30.00%',28),('Gianluigi Buffon','Paris SG',1978,'ITA',31,73,104,'29.81%',29),('Ralf Fahrmann','Schalke',1988,'GER',14,33,47,'29.79%',30),('Andriy Pyatov','Shakhtar Donetsk',1984,'UKR',16,38,54,'29.63%',31),('Koen Casteels','Wolfsburg',1992,'BEL',8,19,27,'29.63%',32),('Diego Benaglio','Monaco',1983,'BEL',20,48,68,'29.41%',33),('Rene Adler','Mainz',1985,'GER',15,36,51,'29.41%',34),('Sergio Romero','Manchester United',1987,'ARG',10,24,34,'29.41%',35),('Etrit Berisha','Atalanta',1989,'ALB',8,20,28,'28.57%',36),('Igor Akinfeev','CSKA Moscow',1986,'RUS',20,50,70,'28.57%',37),('Sergio Asenjo','Villarreal',1989,'ESP',10,25,35,'28.57%',38),('Sergio Rico','Fulham',1993,'ESP',8,20,28,'28.57%',39),('Wojciech Szczesny','Juventus',1990,'POL',14,36,50,'28.00%',40),('Geronimo Rulli','Real Sociedad',1992,'ARG',10,26,36,'27.78%',41),('Kasper Schmeichel','Leicester City',1986,'DEN',20,52,72,'27.78%',42),('Jeroen Zoet','PSV Eindhoven',1991,'NED',13,34,47,'27.66%',43),('Simon Mignolet','Liverpool',1988,'BEL',12,32,44,'27.27%',44),('Angus Gunn','Southampton',1996,'ENG',3,8,11,'27.27%',45),('Bruno Varela','Benfica',1994,'POR',6,16,22,'27.27%',46),('Joe Hart','Burnley',1987,'ENG',15,41,56,'26.79%',47),('Kepa Arrizabalaga','Chelsea',1994,'ESP',4,11,15,'26.67%',48),('Andrei Radu','Genoa',1997,'ROU',4,11,15,'26.67%',49),('Artur Boruc','Bournemouth',1980,'POL',15,42,57,'26.32%',50),('Marc-Andre ter Stegen','FC Barcelona',1992,'GER',10,28,38,'26.32%',51),('Franco Armani','River Plate',1986,'ARG',5,14,19,'26.32%',52),('Lovre Kalinic','Gent',1990,'CRO',6,17,23,'26.09%',53),('Tim Howard','Colorado Rapids',1979,'USA',18,51,69,'26.09%',54),('Martin Dubravka','Newcastle United',1989,'CZE',6,17,23,'26.09%',55),('Heurelho Gomes','Watford',1981,'BRA',14,40,54,'25.93%',56),('Diego Lopez','Espanyol',1981,'ESP',14,41,55,'25.45%',57),('Claudio Bravo','Manchester City',1983,'CHI',10,30,40,'25.00%',58),('Rune Jarstein','Hertha Berlin',1984,'NOR',15,45,60,'25.00%',59),('Lukasz Fabianski','West Ham',1985,'POL',10,31,41,'24.39%',60),('Jonas Lössl','Huddersfield',1989,'DEN',10,31,41,'24.39%',61),('Péter Gulácsi','RB Leipzig',1990,'HUN',8,25,33,'24.24%',62),('David De Gea','Manchester United',1990,'ESP',11,35,46,'23.91%',63),('Iker Casillas','Porto',1981,'ESP',22,73,95,'23.16%',64),('Lukasz Skorupski','Bologna',1991,'POL',6,20,26,'23.08%',65),('Kiko Casilla','Real Madrid CF',1986,'ESP',3,10,13,'23.08%',66),('Alphonse Areola','Paris SG',1993,'FRA',6,20,26,'23.08%',67),('Nick Pope','Burnley',1992,'ENG',3,10,13,'23.08%',68),('Benoit Costil','Bordeaux',1987,'FRA',13,44,57,'22.81%',69),('Antonio Adan','Atletico Madrid',1987,'ESP',5,17,22,'22.73%',70),('Sam Johnstone','West Bromwich Albion',1993,'ENG',5,17,22,'22.73%',71),('Cássio','Corinthias',1987,'BRA',5,17,22,'22.73%',72),('Carlos Kameni','Fenerbahce',1984,'CMR',12,41,53,'22.64%',73),('Bernd Leno','Arsenal',1992,'GER',14,49,63,'22.22%',74),('Alex Meret','Napoli',1997,'ITA',4,14,18,'22.22%',75),('David Soria','Getafe',1993,'ESP',2,7,9,'22.22%',76),('Petr Cech','Arsenal',1982,'CZE',17,60,77,'22.08%',77),('Yann Sommer','Borussia Mönchengladbach',1988,'SUI',15,53,68,'22.06%',78),('Dominik Livakovic','Dinamo Zagreb',1995,'CRO',7,25,32,'21.88%',79),('Michel Vorm','Tottenham Hotspur',1983,'NED',8,29,37,'21.62%',80),('Vincent Enyeama','Free Agent',1982,'NGA',8,29,37,'21.62%',81),('Timo Horn','1. FC Köln',1993,'GER',9,33,42,'21.43%',82),('Anthony Lopes','Lyon',1990,'POR',9,33,42,'21.43%',83),('Jefferson','Botafogo',1983,'BRA',6,22,28,'21.43%',84),('Volkan Babacan','Basaksehir',1988,'TUR',7,26,33,'21.21%',85),('Jordan Pickford','Everton',1994,'ENG',7,26,33,'21.21%',86),('Vicente Guaita','Crystal Palace',1987,'ESP',7,26,33,'21.21%',87),('André Onana','Ajax',1996,'CMR',4,15,19,'21.05%',88),('Rúnar Alex Rúnarsson','Dijon',1995,'ISL',4,15,19,'21.05%',89),('Rui Patricio','Wolverhampton',1988,'POR',13,49,62,'20.97%',90),('Tomas Koubek','Stade de Rennais',1992,'CZE',5,19,24,'20.83%',91),('Karl Darlow','Newcastle United',1990,'ENG',6,23,29,'20.69%',92),('Alessio Cragno','Cagliari',1994,'ITA',7,27,34,'20.59%',93),('Mattia Perrin','Juventus',1992,'ITA',9,35,44,'20.45%',94),('Guillermo Ochoa','Standard Liege',1985,'MEX',12,47,59,'20.34%',95),('Salvatore Sirigu','Torino',1987,'ITA',10,40,50,'20.00%',96),('Ederson','Manchester City',1993,'BRA',5,20,25,'20.00%',97),('Aleksandr Selikhov','Spartak Moscow',1994,'RUS',3,12,15,'20.00%',98),('Guilherme','Lokomotiv Moscow',1985,'BRA',7,28,35,'20.00%',99),('Oliver Baumann','Hoffenheim',1990,'GER',9,37,46,'19.57%',100),('Fernando Muslera','Galatasaray',1986,'URU',11,46,57,'19.30%',101),('Maarten Stekelenburg','Everton',1982,'NED',9,38,47,'19.15%',102),('Victor Valdes','Free Agent',1982,'ESP',11,48,59,'18.64%',103),('Adrian','West Ham',1987,'ESP',5,22,27,'18.52%',104),('Öryan Nyland','Aston Villa',1990,'NOR',5,22,27,'18.52%',105),('Andrey Lunev','Zenit',1991,'RUS',2,9,11,'18.18%',106),('Onur Kivrak','Trabzonspor',1988,'TUR',4,19,23,'17.39%',107),('Ben Foster','Watford',1983,'ENG',8,38,46,'17.39%',108),('Darren Randolph','Middlesbrough',1987,'IRL',8,38,46,'17.39%',109),('Simone Scuffet','Udinese',1996,'ITA',4,19,23,'17.39%',110),('Marco Sportiello','Frosinone',1992,'ITA',5,24,29,'17.24%',111),('Alexander Schwolow','Freiburg',1992,'GER',7,34,41,'17.07%',112),('Marwin Hitz','Borussia Dortmund',1987,'SUI',6,30,36,'16.67%',113),('Fabri','Fulham',1987,'ESP',3,15,18,'16.67%',114),('Roman Bürki','Borussia Dortmund',1990,'SUI',6,31,37,'16.22%',115),('Ciprian Tatarusanu','Nantes',1986,'ROU',8,42,50,'16.00%',116),('Martín Campaña','Independiente',1989,'URU',6,32,38,'15.79%',117),('Esteban Andrada','Boca Juniors',1991,'ARG',3,17,20,'15.00%',118),('Jack Butland','Stoke City',1993,'ENG',4,24,28,'14.29%',119),('Thibaut Courtois','Real Madrid CF',1992,'BEL',5,30,35,'14.29%',120),('Hugo Lloris','Tottenham Hotspur',1986,'FRA',11,66,77,'14.29%',121),('Neto','Valencia',1989,'BRA',4,24,28,'14.29%',122),('Tomas Vaclik','Sevilla',1989,'ESP',5,30,35,'14.29%',123),('Yvon Mvogo','RB Leipzig',1994,'SUI',3,18,21,'14.29%',124),('Paul Bernardoni','Nimes Olympique',1997,'FRA',3,19,22,'13.64%',125),('Pepe Reina','AC Milan',1982,'ESP',10,64,74,'13.51%',126),('Emil Audero','Sampdoria',1997,'ITA',2,13,15,'13.33%',127),('Sven Ulreich','Bayern Munchen',1988,'GER',5,33,38,'13.16%',128),('Wayne Hennessey','Crystal Palace',1987,'WAL',6,41,47,'12.77%',129),('Stephane Ruffier','St. Etienne',1986,'FRA',6,41,47,'12.77%',130),('Ron-Robert Zieler','Stuttgart',1989,'GER',4,28,32,'12.50%',131),('Pau López','Betis',1994,'ESP',2,14,16,'12.50%',132),('Benjamin Lecomte','Montpellier',1991,'FRA',3,22,25,'12.00%',133),('Orestis Karnezis','Napoli',1985,'GRE',5,37,42,'11.90%',134),('Jasper Cillessen','FC Barcelona',1989,'NED',3,24,27,'11.11%',135),('Baptiste Reynet','Toulouse',1990,'FRA',5,42,47,'10.64%',136),('Alban Lafont','Toulouse',1999,'FRA',2,17,19,'10.53%',137),('Danny Ward','Leicester City',1993,'WAL',2,17,19,'10.53%',138),('Stanislav Kritsyuk','Krasnodar',1990,'RUS',1,9,10,'10.00%',139),('Jiri Pavlenka','Werder Bremen',1992,'CZE',2,18,20,'10.00%',140),('David Ospina','Napoli',1988,'COL',4,37,41,'9.76%',141),('Asmir Begovic','Bournemouth',1987,'BIH',4,38,42,'9.52%',142),('Odysseas Vlachodimos','Benfica',1994,'GRE',3,35,38,'7.89%',143),('Steve Mandanda','Marseille',1985,'FRA',5,59,64,'7.81%',144),('Craig Gordon','Celtic',1982,'SCO',3,38,41,'7.32%',145),('Tim Krul','Norwich',1988,'NED',3,39,42,'7.14%',146),('Thomas Didillon','Anderlecht',1995,'FRA',1,15,16,'6.25%',147),('Thomas Strakosha','Lazio',1995,'ALB',2,34,36,'5.56%',148),('Marko Dmitrovic','Eibar',1992,'SRB',1,22,23,'4.35%',149),('Yoan Cardinale','Nice',1994,'FRA',0,12,12,'0.00%',150),('Unai Simón','Athletic Bilbao',1997,'ESP',0,5,5,'0.00%',151);
+/*!40000 ALTER TABLE `goalkeepers_penalties` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-06-05  1:51:26
